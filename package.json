@@ -1,0 +1,51 @@
+{
+  "name": "leiturasensores",
+  "version": "1.0.0",
+  "description": "Código para leitura",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel-node index.js",
+    "babel-debug": "nodemon --exec babel-node index.js --debug",
+    "serve": "babel-node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:make": "knex migrate:make",
+    "migrate:up": "knex migrate:latest",
+    "migrate:down": "knex migrate:rollback"
+  },
+  "keywords": [
+    "sensores",
+    "leitura",
+    "api"
+  ],
+  "author": "Júlio Guedes",
+  "license": "Sem qualquer",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bookshelf": "^0.10.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.14.0",
+    "knex": "^0.16.3",
+    "mssql": "^4.2.3",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.2",
+    "nyc": "^11.7.2",
+    "supertest": "^3.0.0"
+  }
+}
