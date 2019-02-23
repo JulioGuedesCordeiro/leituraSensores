@@ -4,9 +4,10 @@
   "description": "Código para leitura",
   "main": "index.js",
   "scripts": {
+    "babel-node": "babel-node",
     "babel": "babel-node index.js",
     "babel-debug": "nodemon --exec babel-node index.js --debug",
-    "serve": "babel-node ./index.js",
+    "serve": "nodemon --exec npm run babel-node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate:make": "knex migrate:make",
     "migrate:up": "knex migrate:latest",
